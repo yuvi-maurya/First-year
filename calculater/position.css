@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(4, 36, 4);
+    
+}
+
+.main-con {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle-1{
+     height: 300px;
+    width: 300px;
+    border-radius: 999%;
+    background-image: linear-gradient(60deg, #0bfee6, #149527 );
+    position: fixed;
+    top: -90px;
+    left: -90px;
+}
+.circle-2{
+     height: 250px;
+    width: 250px;
+    border-radius: 999%;
+    background-image: linear-gradient(60deg, #0bfee6, #149527 );
+    position: fixed;
+    top: 30px;
+    left: 50%;
+}
+.circle-3{
+     height: 150px;
+    width: 150px;
+    border-radius: 999%;
+    background-image: linear-gradient(60deg, #0bfee6, #149527 );
+    position: fixed;
+    top: 60%;
+    left: 35%;
+}
+.circle-4{
+     height: 60px;
+    width: 60px;
+    border-radius: 999%;
+    background-image: linear-gradient(60deg, #0bfee6, #149527 );
+    position: fixed;
+    top: 80%;
+    left: 80%;
+}
+.circle-5{
+     height: 100px;
+    width: 100px;
+    border-radius: 999%;
+    background-image: linear-gradient(60deg, #0bfee6, #149527 );
+    position: fixed;
+    top: 40%;
+    left: 94%;
+}
+#card {
+    height: 300px;
+    width: 500px;
+    color: #f3eded;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px , solid , rgba(227, 237, 227, 0.726);
+    z-index: 50;
+    backdrop-filter: blur(50%);
+    background-color: #f3eded1a;
+    box-shadow: 4px, 4px, 20px rgb(17, 139, 17);
+}
+   
