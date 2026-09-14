@@ -1,0 +1,80 @@
+*{ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" sans-serif;
+}
+body{
+    background-image: url(threeTree.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body > section{
+    background-image: url(twoZoomTree.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+   
+
+}
+form{
+    border: 1.3px solid rgba(223, 216, 216, 0.539);
+    background-color: rgba(227, 222, 222, 0.107);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: rgb(61, 53, 53), solid , 1.5px;
+    max-width: 420px ;
+    width: 90%;
+    backdrop-filter: blur(12px);
+    box-shadow: 4px 6px 20px rgba(109, 24, 24, 0.733);
+    
+}
+h1{
+text-align: center;
+color: #b63838;
+margin: 20px;
+
+}
+
+#input-sec{
+    display: grid;
+    gap: 30px;
+}
+
+input
+{ 
+        padding:12px;
+    border-radius: 8px;
+    font-size: 20px;
+   border: none;
+    
+}
+
+
+.login{
+    background-color: #892626;
+    color: #ede8e8;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 50px;
+
+
+
+}
+p{
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+}
+
+p a{
+    text-decoration: none;
+}
