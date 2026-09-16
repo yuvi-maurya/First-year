@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+
+      #man-sec {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .box-sec {
+        min-height: 50vh;
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 6px;
+        /* box-shadow: 4px 4px 8px; */
+        box-shadow: inset -4px -4px 8px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+
+
+      #btn-sec {
+        padding: 12px;
+        font-size: 16px;
+        background-color: blue;
+        border-radius: 8px;
+        margin: 6px 12px;
+        margin-bottom: 12px;
+        color: white;
+        border: none;
+        transition-duration: 2;
+    
+      }
+
+       #btn-sec:hover{
+        background-color: gray;
+        
+       }
+
+      .preview-sec {
+        min-height: 50vh;
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 6px;
+        box-shadow: inset 4px 4px 8px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+      }
+
+      .preview-sec h1{
+        text-shadow: 1.3px 1.3px;
+        
+      }
+
+      #C-sec {
+        margin: 24px;
+      }
+
+      #COll-sec {
+        margin: 24px;
+      }
+
+      input{
+        border-radius: 4px;
+        padding: 8px;
+        font-size: 20px;
+        color: rgba(4, 6, 150, 0.933);
+        border: none;
+        margin: 2px;
+        background-color:rgba(128, 128, 128, 0.293) ;
+      }
+
+      input:hover{
+        border: 1px solid rgb(30, 1, 57);
+      }
+
+      P{
+        font-size: 24PX;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="man-sec">
+      <section class="box-sec">
+        <section>
+          <div>
+            <p>Name</p>
+            <input type=" text" id="name-sec" placeholder="Enter your name" />
+          </div></br>
+          <div>
+            <p>Class</p>
+            <input type=" text" id="class-sec" placeholder="Enter your class" />
+          </div></br>
+          <div>
+            <p>Subject</p>
+            <input
+              type=" text"
+              id="sub-sec"
+              placeholder=" Enter your Subject name"
+            />
+          </div></br>
+          <div>
+            <p>College</p>
+            <input 
+              type=" text"
+              id="coll-sec"
+              placeholder="Enter your College name"
+            />
+          </div></br>
+          <button id="btn-sec" onclick="previewupdate()">Update Preview</button>
+        </section>
+      </section>
+      <section class="preview-sec">
+        <h1 id="N-sec">YOUR NAME</h1>
+        <h1 id="C-sec">YOUR CLASS NAME</h1>
+        <h1 id="S-sec">YOUR SUBJECT NAME</h1>
+        <h1 id="COll-sec">YOUR COLLEGE NAME</h1>
+      </section>
+    </section>
+    <script>
+    //------------------- box- sec--------------
+
+
+      const nameinputE1 = document.getElementById("name-sec");
+      const classinputE1 = document.getElementById("class-sec");
+      const subjectinputE1 = document.getElementById("sub-sec");
+      const collinputE1 = document.getElementById("coll-sec");
+
+    //------------------- preview--------------
+
+    const nameE1 = document.getElementById("N-sec");
+    const classE1 = document.getElementById("C-sec");
+    const subE1 = document.getElementById("S-sec");
+    const collE1 = document.getElementById("COll-sec");
+
+
+      function previewupdate(){
+        nameE1.innerText = nameinputE1.value;
+        classE1.innerText = classinputE1.value;
+        subE1.innerText = subjectinputE1.value;
+        collE1.innerText = collinputE1.value;
+      }
+    </script>
+  </body>
+</html>
