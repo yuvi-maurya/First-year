@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+              display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #men-sec{
+            height: 450px;
+            width: 350px;
+            background-color: rgb(55, 54, 54);
+           box-shadow: 6px 6px 4px gray;
+            margin-top: 70px;
+            margin-left: 20px;
+            border-radius: 12px;
+          
+
+        }
+
+        #men-sec button{
+            margin-left: 20px;
+        }
+
+        #sec-1{
+            height: 60px;
+            width: 270px;
+            background-color: black;
+            margin-bottom: 24px;
+            margin-top: 12px;
+            margin-left: 48px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            box-shadow: inset -4px -4px 8px rgb(163, 41, 41);
+        }
+
+        #sec-1 p{
+            color: rgb(106, 248, 106);
+            font-size: 36px;
+            padding: 10px;
+        
+        }
+
+        #sen-2{
+             margin-top: 12px;
+           
+            
+        }
+
+        #sec-2 button{
+               padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 24px;
+            border: none;
+           
+        }
+
+        #btn-1{
+            background-color: red;
+            margin-right: 70px;
+           
+        }
+
+        #btn-2{
+            font-size: 20px;
+        }
+
+        #sec-3{
+            margin-top: 12px;
+            
+           
+        }
+
+        #sec-3 button{
+               padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 24px;
+            border: none;
+            }
+
+
+        #sec-4{
+             margin-top: 12px;
+            
+            }
+        
+        #sec-4 button{
+               padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 24px;
+            border: none;
+           
+        }
+
+        #sec-5{
+           
+            margin-top: 12px;
+           
+           
+
+        }
+
+        #sec-5 button{
+               padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 24px;
+            border: none;
+           
+            
+         }
+
+
+        #sec-6{
+              margin-top: 12px;
+           
+           
+
+
+        }
+
+        #sec-6 button{
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 24px;
+            border: none;
+            
+        }
+
+       #sec-7{
+         margin-top: 12px;
+           
+           
+
+       }
+
+       #sec-7 button{
+         padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 24px;
+            border: none;
+          
+
+       }
+
+      
+
+       #btn-20{
+        background-color: rgb(23, 132, 23);
+
+       }
+
+     
+          
+    </style>
+</head>
+<body>
+    <section id = "men-sec">
+        <div id = "sec-1">
+            <p id = "display">0</p>
+        </div>
+        <div id = "sec-2">
+            <button id = "btn-1" onclick="clearDisplay()">C</button>
+            <button id = "btn-2" style="font-size: 16px;" onclick="append('%')">%</button>
+            <button id = "btn-3" onclick="append('/')">/</button>
+        </div>
+        <div id = "sec-3">
+            <button id ="btn-4" onclick="append('*')">x</button>
+            <button  id ="btn-5" onclick="append('7')">7</button>
+            <button  id ="btn-6" onclick="append('8')">8</button>
+            <button  id ="btn-7">9</button>
+
+        </div>
+        <div id = "sec-4">
+            <button id = "btn-8" onclick="append('-')">-</button>
+            <button id = "btn-9" onclick="append('4')">4</button>
+            <button id = "btn-10" onclick="append('5')">5</button>
+            <button id = "btn-11" onclick="append('6')">6</button>
+
+        </div>
+
+        <div id = "sec-6">
+            <button id = "btn-16" onclick="append('+')">+</button>
+            <button id = "btn-17" onclick="append('1')">1</button>
+            <button id = "btn-18" onclick="append('2')">2</button>
+            <button id = "btn-19" onclick="append('3')">3</button>
+
+        </div>
+
+        <div id = "sec-7">
+            <button id = "btn-20" onclick="calculate()">=</button>
+            <button id = "btn-21" style="font-size: 16px;" onclick="append('00')">00</button>
+            <button id = "btn-22" onclick="append('0')">0</button>
+            <button id = "btn-23" onclick="append('.')">.</button>
+
+        </div>
+
+
+
+    </section>
+    
+        <script>
+            let display = document.getElementById("display");
+
+            function append(value){
+                if(display.innerText === '0'){
+                    display.innerText = value;
+                }else{
+                    display.innerText = display.innerText + value;
+                }
+            }
+
+            function clearDisplay(){
+                display.innerText = '0';
+            }
+
+            function calculate(){
+                try{
+                    display.innerText = eval(display.innerText);
+                }catch{
+                    display.innerText = 'Error';
+
+                }
+            }
+        
+    </script>
+    
+</body>
+</html>
