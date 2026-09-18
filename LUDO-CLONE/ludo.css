@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.board {
+  margin: 20px auto;
+  display: flex;
+  width: 420px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #444;
+  margin: 5px;
+  position: relative;
+}
+
+.token {
+  position: absolute;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.red { color: red; }
+.blue { color: blue; }
+.green { color: green; }
+.yellow { color: goldenrod; }

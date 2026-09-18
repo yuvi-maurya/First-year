@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ludo Clone</title>
+  <link rel="stylesheet" href="ludo.css">
+</head>
+<body>
+  <h1>Ludo Clone Game</h1>
+
+  <div id="diceSection">
+    <button onclick="rollDice()">🎲 Roll Dice</button>
+    <p id="diceResult">Dice: -</p>
+    <p id="turn">Current Turn: Player 1 🔴</p>
+  </div>
+
+  <div class="board">
+    <div class="cell" id="cell0"></div>
+    <div class="cell" id="cell1"></div>
+    <div class="cell" id="cell2"></div>
+    <div class="cell" id="cell3"></div>
+    <div class="cell" id="cell4"></div>
+    <div class="cell" id="cell5"></div>
+    <div class="cell" id="cell6"></div>
+    <div class="cell" id="cell7"></div>
+    <div class="cell" id="cell8"></div>
+    <div class="cell" id="cell9"></div>
+  </div>
+
+  <div id="tokens">
+    <div id="player1" class="token red">🔴</div>
+    <div id="player2" class="token blue">🔵</div>
+    <div id="player3" class="token green">🟢</div>
+    <div id="player4" class="token yellow">🟡</div>
+  </div>
+
+  <script src="ludo.css"></script>
+</body>
+</html>
